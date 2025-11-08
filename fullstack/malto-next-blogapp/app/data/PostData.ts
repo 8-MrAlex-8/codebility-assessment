@@ -3,7 +3,7 @@
 
 // including type declarations as practice
 type Post = {
-    id: number,
+    id: number | string, // I wanted to simulate using UUIDs with the new additions, but I'm keeping the original ones to have the "number" type  
     title: string,
     excerpt: string,
     content: string,
@@ -29,7 +29,7 @@ const posts: Post[] = [
   },
   // new posts added
   {
-    id: 3,
+    id: "cb5dc1b1-63c2-4b7a-8808-fcf8b72b1336",
     title: "What is Hydration in React?",
     excerpt: "Understanding hydration and why it's important in SSR frameworks.",
     content:
@@ -37,7 +37,7 @@ const posts: Post[] = [
     date: "2025-04-17",
   },
   {
-    id: 4,
+    id: "11d63b76-396c-4d94-a2a2-132e35f210fd",
     title: "Static vs Server Rendering",
     excerpt: "Which rendering strategy should you choose?",
     content:

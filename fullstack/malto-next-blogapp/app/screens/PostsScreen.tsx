@@ -1,4 +1,4 @@
-import PostCard from "./ui/PostCard"
+import PostCard from "./components/PostCard"
 import posts from "../data/PostData"
 
 const PostsScreen = () => {
@@ -9,9 +9,10 @@ const PostsScreen = () => {
         <p>Read what the world has to say.</p>
       </section>
       <div className = "flex flex-wrap justify-center items-center gap-4">
+        {/* Using map() function here to make the repetitive listing of <PostCard /> more efficient */}
         {posts.map((post: any) => {
           return(
-            <PostCard key = {post.id} title = {post.title} excerpt = {post.excerpt}/>
+            <PostCard key = {post.id} id = {post.id} title = {post.title} excerpt = {post.excerpt}/>
           )
         })}      
       </div>
