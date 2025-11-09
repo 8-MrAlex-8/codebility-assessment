@@ -33,7 +33,7 @@ const posts: Post[] = [
     title: "What is Hydration in React?",
     excerpt: "Understanding hydration and why it's important in SSR frameworks.",
     content:
-      "Hydration is the process where React takes HTML that was already rendered on the server and attaches JavaScript to it so it becomes interactive again on the browser...",
+      "Hydration is the process where React takes HTML that was already rendered on the server and attaches JavaScript to it so it becomes interactive again on the browser.",
     date: "2025-04-17",
   },
   {
@@ -41,7 +41,8 @@ const posts: Post[] = [
     title: "Static vs Server Rendering",
     excerpt: "Which rendering strategy should you choose?",
     content:
-      "Next.js supports both static generation and server rendering. Static generation is great for faster load times on pages that rarely change, while server rendering is ideal when data must be fresh on each request...",
+      `Next.js supports both static generation and server rendering. Static generation is great for faster load times on pages that rarely change, 
+      while server rendering is ideal when data must be fresh on each request.`,
     date: "2025-04-18",
   },
 ];
