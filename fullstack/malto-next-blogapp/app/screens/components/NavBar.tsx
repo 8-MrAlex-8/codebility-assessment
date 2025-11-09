@@ -11,11 +11,15 @@ const NavBar = () => {
                     </div>
                 </div>
                 <Link href="/" >
-                    <button className="btn btn-ghost text-2xl">BlogSpot</button>
+                   <button className="flex items-center gap-2 px-5 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
+                        <span className="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent font-extrabold text-2xl">
+                            nextUP
+                        </span>
+                        <span className="text-gray-900 font-semibold text-2xl">
+                            BlogSpot
+                        </span>
+                        </button>
                 </Link>
-            </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
             </div>
         </div>
     )
