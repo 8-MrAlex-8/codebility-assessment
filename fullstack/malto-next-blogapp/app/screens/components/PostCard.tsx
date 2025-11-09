@@ -19,7 +19,7 @@ const PostCard = ({id, title, excerpt}: PostCardProps) => {
                 </p>
                 <div className="card-actions justify-end">
                 <Link href = {`/posts/${id}`}>
-                    <button className="btn bg-blue-200 hover:bg-indigo-700 hover:text-white">Read Post</button>
+                    <button className="btn bg-blue-200 hover:bg-indigo-800 hover:text-white">Read Post</button>
                 </Link>
                 </div>
             </div>

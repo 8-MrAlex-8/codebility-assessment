@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Aside from the expected Next.js and React.js tech, I built this project using:
 
-## Getting Started
+- **TypeScript** - I'm trying to learn TypeScript, so I used it in this project so I can learn more.
+- **Tailwind CSS** - This is my go-to framework for styling.
+- **DaisyUI** - I used DaisyUI for its pre-built components and tweaked its designs to my liking. This is loaded this via CDN.
 
-First, run the development server:
+I tried to break things down into reusable components like UI components and Screens, such as:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **NavBar** - The navigation bar at the top with my "nextUP BlogSpot" logo
+- **PostCard** - A card component I use to display each post preview
+- **Footer** - Just a simple footer with my name and copyright
+- **PostsScreen** - The main screen that shows all the posts
+- **PostFoundScreen** - What you see when a post exists
+- **NoPostFoundScreen** - What you see when a post doesn't exist (I made this separate to keep things clean)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How I Managed the Data
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Right now, I'm storing all my blog post data in one file (`app/data/PostData.ts`). I used TypeScript here to define what a Post data type.
+I also made it so posts can have either number IDs (like 1, 2) or UUID strings - I was experimenting with both.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Notes
 
-## Learn More
+- I used the App Router that came with the Next.js default scaffold.
+- Dynamic routes use the `[id]` folder structure
+- API routes go in the `app/api/` directory
+- I used both `.tsx` and `.jsx` files - some things are TypeScript, some are just JavaScript
+- Other notes, especially those with respect to the actual instructions, can be seen in other README files within the 'posts' and 'screens' folder.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made by Lanz Alexander Malto

@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <NavBar />
       <main className = "min-h-screen bg-base-50 py-8 px-12 flex flex-col justify-center align-center gap-8 bg-linear-to-r from-[#f7f0ff] to-sky-50">
-        {/* Most of the instructions are satisfied through this component: */}
         <PostsScreen /> 
       </main>
       <Footer />
